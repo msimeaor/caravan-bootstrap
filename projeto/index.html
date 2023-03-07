@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caravan</title>
+  <title>MyCaravan</title>
 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/geral.css">
@@ -14,16 +14,16 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 sombra">
-    <a href="index.html" class="navbar-brand"><img src="imagens/logo-caravan.svg"></a>
+  <nav class="menu-principal navbar navbar-expand-md navbar-light bg-light fixed-top py-3 sombra">
+    <a href="index.html" class="logo-caravan navbar-brand"><img src="imagens/logo-caravan.svg"></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+    <div class="menu-itens-area collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="lista-menu navbar-nav ml-auto">
         <li class="nav-item dropdown active mx-md-2">
           <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -33,19 +33,15 @@
             <a class="dropdown-item" href="#">Dublin</a>
           </div>
         </li>
-
         <li class="nav-item active mx--md-2">
           <a href="planos.html" class="nav-link">Planos</a>
         </li>
-
         <li class="nav-item active mx--md-2">
           <a href="contato.html" class="nav-link">Contato</a>
         </li>
-
         <li class="nav-item active mx-md-2">
           <a href="#" class="nav-link">Login</a>
         </li>
-
         <li class="nav-item active mx-md-2">
           <a href="inscricao.html" class="btn btn-outline-primary">Inscreva-se</a>
         </li>
@@ -53,8 +49,8 @@
     </div>
   </nav>
 
-  <section class="container-fluid">
-    <div class="row bg-dark">
+  <section class="newsletter-area container-fluid">
+    <div class="row bg-dark d-flex align-items-center">
       <div class="col-lg-7 px-0">
         <div id="carouselCidades" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -105,6 +101,67 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="vantagens-area container-fluid text-center px-0 bg-light">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-12">
+          <h6 class="text-uppercase mt-4">Tudo de melhor para você</h6>
+          <p class="display-4 text-primary">Aproveite as vantagens</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-xl-4 col-md-6 my-2">
+          <img src="imagens/icones/passaporte.svg" alt="Documentos" class="img-vantagens">
+          <span class="d-block h4 mt-2 mb-3">Documentos</span>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, ipsum!</p>
+        </div>
+        <div class="col-xl-4 col-md-6 my-2">
+          <img src="imagens/icones/passagens.svg" alt="Passagens" class="img-vantagens">
+          <span class="d-block h4 mt-2 mb-3">Passagens</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, atque?</p>
+        </div>
+        <div class="col-xl-4 col-md-6 my-2">
+          <img src="imagens/icones/translado.svg" alt="Translado" class="img-vantagens">
+          <span class="d-block h4 mt-2 mb-3">Translado</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolorum!</p>
+        </div>
+        <div class="col-xl-4 col-md-6 my-2">
+          <img src="imagens/icones/praias.svg" alt="Praias" class="img-vantagens">
+          <span class="d-block h4 mt-2 mb-3">Praias</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, officiis.</p>
+        </div>
+        <div class="col-xl-4 col-md-6 my-2">
+          <img src="imagens/icones/bagagens.svg" alt="Bagagens" class="img-vantagens">
+          <span class="d-block h4 mt-2 mb-3">Bagagens</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, itaque!</p>
+         </div>
+      
+        <div class="col-xl-4 col-md-6 my-2">
+          <img src="imagens/icones/turismo.svg" alt="Turismo" class="img-vantagens">
+          <span class="d-block h4 mt-2 mb-3">Turismo</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, nihil.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mt-3 mb-5">
+          <a href="#" class="btn btn-outline-primary btn-lg">
+            Comprar Plano
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <blockquote class="blockquote myBlockquote text-center py-5">
+    <p class="citacao-quote display-4 text-light font-italic py-4 m-auto w-75">"A felicidade Não está na estrada que leva a algum lugar. A felicidade é a própria estrada"</p>
+    <cite class="text-light">- Boby Dylan</cite>
+  </blockquote>
+
+  <section class="container text-center mb-5">
+    <h6 class="text-uppercase mt-5">Ainda está com duvidas?</h6>
+    <p class="display-4 text-primary">Perguntas Frequentes</p>
   </section>
 
   <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
