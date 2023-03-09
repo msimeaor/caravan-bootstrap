@@ -41,3 +41,9 @@ body {
     position: relative;
   }
 }
+
+@media (max-width: 991px) {
+  .link-rede-social {
+    width: 35% !important;
+  }
+}
