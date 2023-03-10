@@ -40,10 +40,22 @@ body {
   .fixed-top {
     position: relative;
   }
+
+  .newsletter-area h3 {
+    font-size: 2rem;
+  }
+
+  .link-rede-social {
+    width: 75% !important;
+  }
+
+  .footer p {
+    font-size: 0.85rem;
+  }
 }
 
-@media (max-width: 991px) {
-  .link-rede-social {
-    width: 35% !important;
+@media (max-width: 500px) {
+  .link {
+    font-size: 0.8rem;
   }
 }
