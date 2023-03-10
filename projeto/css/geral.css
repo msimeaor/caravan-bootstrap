@@ -30,6 +30,18 @@ body {
   background-size: cover;
 }
 
+.tabela-container {
+  overflow-x: scroll;
+}
+
+.tabela-eventos th, tr {
+  min-width: 80px;
+}
+
+.imagem-5 {
+  height: 100%;
+}
+
 @media (max-width: 767px) {
   .citacao-quote {
     font-size: 2.5rem;
