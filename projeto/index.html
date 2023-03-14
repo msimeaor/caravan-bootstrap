@@ -14,6 +14,40 @@
 
 <body>
 
+  <!--Modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre na sua conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="input-email">E-mail</label>
+              <input type="email" name="input-email" id="input-email" class="form-control" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
+              <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu e-mail!</small>
+            </div>
+            <div class="form-group">
+              <label for="input-senha">Senha</label>
+              <input type="password" name="input-senha" id="input-senha" class="form-control" placeholder="Insira sua senha">
+            </div>
+            <div class="form-text">
+              <small id="esqueceu-senha" class="form-text text-muted d-inline-block">Esqueceu a senha?</small>
+              <a href="#" class="small text-primary">Clique aqui</a>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="index.html" class="botao-modal-entrar btn btn-outline-primary">Entrar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!--Menu do site-->
   <nav class="menu-principal sombra navbar navbar-expand-md navbar-light bg-light fixed-top py-3">
     <a href="index.html" class="logo-caravan navbar-brand"><img src="imagens/logo-caravan.svg"></a>
@@ -41,7 +75,7 @@
           <a href="contato.html" class="nav-link">Contato</a>
         </li>
         <li class="nav-item active mx-md-2">
-          <a href="#" class="nav-link">Login</a>
+          <a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal">Login</a>
         </li>
         <li class="nav-item active mx-md-2">
           <a href="inscricao.html" class="btn btn-outline-primary">Inscreva-se</a>

@@ -42,6 +42,10 @@ body {
   height: 100%;
 }
 
+.botao-modal-entrar {
+  min-width: 120px;
+}
+
 @media (max-width: 767px) {
   .citacao-quote {
     font-size: 2.5rem;
