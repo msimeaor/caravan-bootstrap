@@ -76,4 +76,38 @@ body {
   .link {
     font-size: 0.8rem;
   }
+
+  .titulo-newsletter {
+    font-size: 2.5rem;
+  }
+
+  .paragrafo-newsletter {
+    font-size: 1.15rem;
+  }
+
+  .descricao-section {
+    font-size: .8rem;
+  }
+
+  .anuncio-section {
+    font-size: 2.5rem;
+  }
+
+  .img-vantagens {
+    height: 75px;
+    width: 75px;
+  }
+
+  .botao {
+    padding: 0.3rem 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .pergunta {
+    font-size: 1.1rem;
+  }
+
+  .resposta {
+    font-size: 1rem;
+  }
 }
