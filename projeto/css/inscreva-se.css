@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.formas-pagamento-container {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+}
+
+.btn-forma-pagamento {
+  border-radius: 0rem !important;
+}
+
+.input-container + .input-container {
+  padding-left: .05rem;
+}

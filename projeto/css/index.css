@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.sombra {
+  box-shadow: 2px 4px 10px #4949491e;
+}
+
+.img-vantagens {
+  width: 100px;
+  height: 100px;
+}
+
+.myBlockquote {
+  background-image: url(../imagens/geral/bg-quote.jpg);
+  background-position: center;
+  background-size: cover;
+}

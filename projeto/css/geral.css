@@ -1,4 +1,7 @@
 @charset "utf-8";
+@import 'inscreva-se.css';
+@import 'index.css';
+@import 'destinos.css';
 
 body {
   padding-top: 75.19px;
@@ -15,52 +18,21 @@ body {
   border-radius: 10px;
 }
 
-.sombra {
-  box-shadow: 2px 4px 10px #4949491e;
-}
-
-.img-vantagens {
-  width: 100px;
-  height: 100px;
-}
-
-.myBlockquote {
-  background-image: url(../imagens/geral/bg-quote.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.tabela-container {
-  overflow-x: scroll;
-}
-
-.tabela-eventos th, tr {
-  min-width: 80px;
-}
-
-.imagem-5 {
-  height: 100%;
-}
-
 .botao-modal-entrar {
   min-width: 120px;
 }
 
 @media (max-width: 767px) {
-  .citacao-quote {
-    font-size: 2.5rem;
-  }
-
   body {
     padding-top: 0px;
   }
 
-  .fixed-top {
-    position: relative;
-  }
-
   .newsletter-area h3 {
     font-size: 2rem;
+  }
+
+  .citacao-quote {
+    font-size: 2.5rem;
   }
 
   .link-rede-social {
@@ -69,6 +41,10 @@ body {
 
   .footer p {
     font-size: 0.85rem;
+  }
+
+  .fixed-top {
+    position: relative;
   }
 }
 
@@ -85,22 +61,9 @@ body {
     font-size: 1.15rem;
   }
 
-  .descricao-section {
-    font-size: .8rem;
-  }
-
-  .anuncio-section {
-    font-size: 2.5rem;
-  }
-
   .img-vantagens {
     height: 75px;
     width: 75px;
-  }
-
-  .botao {
-    padding: 0.3rem 0.8rem;
-    font-size: 1.1rem;
   }
 
   .pergunta {
@@ -109,5 +72,18 @@ body {
 
   .resposta {
     font-size: 1rem;
+  }
+
+  .descricao-section {
+    font-size: .8rem;
+  }
+
+  .anuncio-section {
+    font-size: 2.5rem;
+  }
+
+  .botao {
+    padding: 0.3rem 0.8rem;
+    font-size: 1.1rem;
   }
 }

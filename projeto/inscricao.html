@@ -93,43 +93,43 @@
     </div>
     
     <div class="row">
-      <div class="col-6">
+      <div class="col-lg-6 my-4">
         <form>
           <div class="row mb-3">
-            <div class="col px-2">
+            <div class="input-container col">
               <label for="input-nome">Nome</label>
               <input type="text" name="input-nome" id="input-nome" class="form-control" placeholder="Nome Completo">
             </div>
-            <div class="col px-2">
+            <div class="input-container col">
               <label for="input-cpf">CPF</label>
               <input type="text" name="input-cpf" id="input-cpf" class="form-control" placeholder="000.000.000-00">
             </div>
           </div>
 
           <div class="row mb-3">
-            <div class="col px-2">
+            <div class="input-container col">
               <label for="input-email">E-mail</label>
               <input type="email" name="input-email" id="input-email" class="form-control" placeholder="Insira seu e-mail">
             </div>
-            <div class="col px-2">
+            <div class="input-container col">
               <label for="input-senha">Senha</label>
               <input type="password" name="input-senha" id="input-senha" class="form-control" placeholder="Insira sua senha">
             </div>
           </div>
 
           <div class="row mb-3">
-            <div class="col px-2">
+            <div class="input-container col">
               <label for="input-endereco">Endereço</label>
               <input type="text" name="input-endereco" id="input-endereco" class="form-control" placeholder="Insira seu endereço completo">
             </div>
           </div>
 
           <div class="row mb-3">
-            <div class="col-5 px-2">
+            <div class="input-container col-5">
               <label for="input-cidade">Cidade</label>
               <input type="text" name="input-cidade" id="input-cidade" class="form-control">
             </div>
-            <div class="col px-2">
+            <div class="input-container col">
               <label for="seletor-cidade">Estado</label>
               <select name="seletor-cidade" id="seletor-cidade" class="form-control">
                 <option>Selecione o estado</option>
@@ -143,12 +143,77 @@
                 <option>Santa Catarina</option>
               </select>
             </div>
-            <div class="col px-2">
+            <div class="input-container col">
               <label for="input-cep">CEP</label>
               <input type="text" name="input-cep" id="input-cep" class="form-control" placeholder="00000-000">
             </div>
           </div>
         </form>
+
+        <div class="formas-pagamento-container row bg-light p-3">
+          <h6>FORMA DE PAGAMENTO</h6>
+
+          <ul class="nav nav-tabs w-100" id="myTab" role="tablist">
+            <li class="nav-item w-50">
+              <a href="#cartao-credito" class="btn-sm btn-forma-pagamento nav-link active btn-secondary" id="home-tab" data-toggle="tab" role="tab" aria-controls="cartao-credito" aria-selected="true">Cartão de Credito</a>
+            </li>
+            <li class="nav-item w-50">
+              <a href="#boleto" class="btn-sm btn-forma-pagamento nav-link btn-secondary" id="home-tab" data-toggle="tab" role="tab" aria-controls="boleto" aria-selected="false">Boleto Bancário</a>
+            </li>
+          </ul>
+
+          <div class="tab-content mt-2" id="myTabContent">
+            <div class="tab-pane fade show active" id="cartao-credito" role="tabpanel" aria-labelledby="home-tab">
+              <form>
+                <div class="row">
+                  <div class="input-container col-5">
+                    <label for="nome-cartao">Nome no Cartão</label>
+                    <input type="text" name="nome-cartao" id="nome-cartao" class="form-control" placeholder="Nome impresso no cartão">
+                  </div>
+                  <div class="input-container col">
+                    <label for="mes-cartao">Mês</label>
+                    <select name="mes-cartao" id="mes-cartao" class="form-control">
+                      <option>Expira no mês...</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                    </select>
+                  </div>
+                  <div class="input-container col">
+                    <label for="ano-cartao">Ano</label>
+                    <select name="ano-cartao" id="ano-cartao" class="form-control">
+                      <option>Ano do vencimento</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mt-2">
+                  <div class="col">
+                    <label for="numero-cartao">Numero do cartão</label>
+                    <input type="text" name="numero-cartao" id="numero-cartao" class="form-control" placeholder="9999 9999 9999 9999">
+                  </div>
+                  <div class="col">
+                    <label for="codigo-seguranca-cartao">Codigo de segurança/CVV</label>
+                    <input type="text" name="codigo-seguranca-cartao" id="codigo-seguranca-cartao" class="form-control" placeholder="999">
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="tab-pane fade" id="boleto" role="tabpanel" aria-labelledby="home-tab">
+              
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
