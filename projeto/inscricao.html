@@ -85,33 +85,39 @@
 
   <!--Plano escolhido-->
   <section class="container">
-    <div class="row py-5">
+    <div class="row pt-5">
       <div class="col-12 text-center">
         <h6 class="descricao-section text-uppercase my-0">Programe a viajem do seu sonho</h6>
         <p class="anuncio-section display-4 text-primary">Inscreva-se</p>
       </div>
     </div>
     
-    <div class="row">
-      <div class="col-lg-6 my-4">
+    <div class="row mb-4">
+      <div class="col-lg-6 order-lg-first order-1 my-4">
         <form>
           <div class="row mb-3">
-            <div class="input-container col">
+            <div class="input-container col-sm col-12">
               <label for="input-nome">Nome</label>
               <input type="text" name="input-nome" id="input-nome" class="form-control" placeholder="Nome Completo">
             </div>
-            <div class="input-container col">
+          </div>
+
+          <div class="row mb-3">
+            <div class="input-container col-sm col-12">
               <label for="input-cpf">CPF</label>
               <input type="text" name="input-cpf" id="input-cpf" class="form-control" placeholder="000.000.000-00">
             </div>
           </div>
 
           <div class="row mb-3">
-            <div class="input-container col">
+            <div class="input-container col-sm col-12">
               <label for="input-email">E-mail</label>
               <input type="email" name="input-email" id="input-email" class="form-control" placeholder="Insira seu e-mail">
             </div>
-            <div class="input-container col">
+          </div>
+
+          <div class="row mb-3">
+            <div class="input-container col-sm col-12">
               <label for="input-senha">Senha</label>
               <input type="password" name="input-senha" id="input-senha" class="form-control" placeholder="Insira sua senha">
             </div>
@@ -125,10 +131,13 @@
           </div>
 
           <div class="row mb-3">
-            <div class="input-container col-5">
+            <div class="input-container col-sm col-12">
               <label for="input-cidade">Cidade</label>
               <input type="text" name="input-cidade" id="input-cidade" class="form-control">
             </div>
+          </div>
+
+          <div class="row mb-3">
             <div class="input-container col">
               <label for="seletor-cidade">Estado</label>
               <select name="seletor-cidade" id="seletor-cidade" class="form-control">
@@ -143,14 +152,14 @@
                 <option>Santa Catarina</option>
               </select>
             </div>
-            <div class="input-container col">
+            <div class="input-container col pl-1">
               <label for="input-cep">CEP</label>
               <input type="text" name="input-cep" id="input-cep" class="form-control" placeholder="00000-000">
             </div>
           </div>
         </form>
 
-        <div class="formas-pagamento-container row bg-light p-3">
+        <div class="container-rounded-shadow row bg-light p-3 mt-5">
           <h6>FORMA DE PAGAMENTO</h6>
 
           <ul class="nav nav-tabs w-100" id="myTab" role="tablist">
@@ -162,15 +171,15 @@
             </li>
           </ul>
 
-          <div class="tab-content mt-2" id="myTabContent">
+          <div class="tab-content mt-3 w-100" id="myTabContent">
             <div class="tab-pane fade show active" id="cartao-credito" role="tabpanel" aria-labelledby="home-tab">
               <form>
                 <div class="row">
-                  <div class="input-container col-5">
+                  <div class="input-container col-sm-6 col-12">
                     <label for="nome-cartao">Nome no Cartão</label>
                     <input type="text" name="nome-cartao" id="nome-cartao" class="form-control" placeholder="Nome impresso no cartão">
                   </div>
-                  <div class="input-container col">
+                  <div class="input-container col-sm-3 col pl-sm-1 mt-sm-auto mt-2">
                     <label for="mes-cartao">Mês</label>
                     <select name="mes-cartao" id="mes-cartao" class="form-control">
                       <option>Expira no mês...</option>
@@ -181,7 +190,7 @@
                       <option>05</option>
                     </select>
                   </div>
-                  <div class="input-container col">
+                  <div class="input-container col-sm-3 col pl-1 mt-sm-auto mt-2">
                     <label for="ano-cartao">Ano</label>
                     <select name="ano-cartao" id="ano-cartao" class="form-control">
                       <option>Ano do vencimento</option>
@@ -196,12 +205,12 @@
                 </div>
 
                 <div class="row mt-2">
-                  <div class="col">
+                  <div class="col-8">
                     <label for="numero-cartao">Numero do cartão</label>
                     <input type="text" name="numero-cartao" id="numero-cartao" class="form-control" placeholder="9999 9999 9999 9999">
                   </div>
-                  <div class="col">
-                    <label for="codigo-seguranca-cartao">Codigo de segurança/CVV</label>
+                  <div class="col pl-1">
+                    <label for="codigo-seguranca-cartao">CVV</label>
                     <input type="text" name="codigo-seguranca-cartao" id="codigo-seguranca-cartao" class="form-control" placeholder="999">
                   </div>
                 </div>
@@ -209,14 +218,100 @@
             </div>
 
             <div class="tab-pane fade" id="boleto" role="tabpanel" aria-labelledby="home-tab">
-              
+              <p class="text-secondary">CLIQUE EM "CONTRATAR PLANO" QUE ENVIAREMOS UM BOLETO PELO SEU EMAIL!</p>
             </div>
           </div>
+        </div>
 
+        <div class="row">
+          <div class="col-12 d-flex align-items-center mt-3 mb-2">
+            <input type="checkbox" id="check-termos-servico" class="mr-2">
+            <p class="m-0">Concordo com os <a href="#">termos e condições</a></p>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-outline-primary btn-lg">Contratar Plano</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="plano-container col-lg-5 my-4 mx-auto">
+        <h6 class="text-primary mb-2">PLANO ESCOLHIDO</h6>
+        <div class="container-rounded-shadow bg-light p-4">
+          <h2>Platinum</h2>
+          <ul class="nav flex-column">
+            <li class="item-vantagem nav-item py-3 my-1">
+              <span>🠂 60 dias de viagem</span>
+            </li>
+            <li class="item-vantagem nav-item py-3 my-1">
+              <span>🠂 6 destinos diferentes</span>
+            </li>
+            <li class="item-vantagem nav-item py-3 my-1">
+              <span>🠂 Tudo pago pela empresa</span>
+            </li>
+            <li class="item-vantagem nav-item py-3 my-1">
+              <span>🠂 Ingressos para eventos</span>
+            </li>
+          </ul>
+          <select name="cidade-plano-escolhido" id="cidade-plano-escolhido" class="form-control my-2">
+            <option>Selecione a cidade</option>
+            <option>Paris</option>
+            <option>California</option>
+            <option>Dublin</option>
+          </select>
+          <h4 class="mt-4">R$14.997,00</h4>
         </div>
       </div>
     </div>
   </section>
+
+  <!--Area para contato-->
+  <section class="contato container-fluid bg-dark py-4">
+    <div class="container px-sm-0 px-0">
+      <div class="row d-flex">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 my-sm-2 my-3">
+          <h6 class="text-light">PÁGINAS</h6>
+          <ul class="nav flex-column">
+            <a class="link nav-link p-0 text-light " href="planos.html">Planos</a>
+            <a class="link nav-link p-0 text-light" href="contato.html">Contato</a>
+            <a class="link nav-link p-0 text-light" href="inscricao.html">Inscreva-se</a>
+          </ul>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 my-sm-2 my-3">
+          <h6 class="text-light">LOCAIS</h6>
+          <ul class="nav flex-column">
+            <a class="link nav-link p-0 text-light" href="destinos.html">Califórnia</a>
+            <a class="link nav-link p-0 text-light" href="destinos.html">París</a>
+            <a class="link nav-link p-0 text-light" href="destinos.html">Dublin</a>
+          </ul>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 my-sm-2 my-3">
+          <h6 class="text-light">DADOS DE CONTATO</h6>
+          <ul class="nav flex-column">
+            <a class="link nav-link p-0 text-light" href="#">maatsimeao@gmail.com</a>
+            <a class="link nav-link p-0 text-light" href="#">+55 (61) 99999-9999</a>
+            <a class="link nav-link p-0 text-light" href="#">Seg / Sex - 08:00 ás 18:00</a>
+          </ul>
+        </div>
+
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 my-sm-2 my-3">
+          <h6 class="text-light">REDES SOCIAIS</h6>
+          <ul class="nav flex-column">
+            <a class="link link-rede-social nav-link p-0 my-1 btn btn-outline-light w-100" href="https://www.linkedin.com/in/msimeaor/" target="_blank">Linkedin</a>
+            <a class="link link-rede-social nav-link p-0 my-1 btn btn-outline-light w-100" href="https://github.com/msimeaor" target="_blank">GitHub</a>
+            <a class="link link-rede-social nav-link p-0 my-1 btn btn-outline-light w-100" href="https://www.instagram.com/msimeaor/" target="_blank">Instagram</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <section class="footer container-fluid text-center bg-primary">
+    <p class="mb-0 py-2 text-light font-weight-bold">Caravan &copy; 2023. Todos os direitos reservados</p>
+  </section>
+
 
   <script src="js/jquery-3.2.1.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
