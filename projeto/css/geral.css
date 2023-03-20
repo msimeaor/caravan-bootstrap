@@ -2,6 +2,7 @@
 @import 'inscreva-se.css';
 @import 'index.css';
 @import 'destinos.css';
+@import 'planos.css';
 
 body {
   padding-top: 75.19px;
@@ -20,6 +21,19 @@ body {
 
 .botao-modal-entrar {
   min-width: 120px;
+}
+
+.container-rounded-shadow {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+}
+
+.item-vantagem {
+  border-bottom: 1.5px solid #ccc;
+}
+
+.item-vantagem:last-child {
+  border-bottom: none;
 }
 
 @media (max-width: 767px) {
