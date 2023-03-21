@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>myCaravan - Planos</title>
+  <title>myCaravan - Contato</title>
 
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./css/geral.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/contato.css">
 
 </head>
 <body>
@@ -82,60 +83,121 @@
     </div>
   </nav>
 
-  <!-- Area Planos -->
-  <section class="container py-5 mb-5">
-    <div class="row mb-3">
-      <div class="col text-center">
-        <h6 class="descricao-section text-uppercase my-0">Seu plano, sua viagem</h6>
-        <p class="anuncio-section display-4 text-primary">Escolha o plano</p>
-      </div>
-    </div>
-
-    <div class="row mb-5">
-      <div class="col d-flex align-items-end">
-        <div class="container-rounded-shadow w-100 bg-light p-sm-5 p-3">
-          <h2 class="mb-0">Gold</h2>
-          <ul class="nav flex-column">
-            <li class="item-vantagem nav-item py-3 my-1">🠂 30 dias de viagem</li>
-            <li class="item-vantagem nav-item py-3 my-1">🠂 3 destinos diferentes</li>
-            <li class="item-vantagem nav-item py-3 my-1">🠂 Tudo pago pela empresa</li>
-            <li class="item-vantagem nav-item py-3 my-1">🠂 Ingressos para eventos</li>
-          </ul>
-          <select class="form-control my-2">
-            <option>Selecione a cidade</option>
-            <option>California</option>
-            <option>Paris</option>
-            <option>Dublin</option>
-          </select>
-          <div class="d-flex flex-wrap align-items-center container-comprar-plano-gold mt-4">
-            <a href="inscricao.html" class="botao btn btn-outline-primary btn-lg mr-4 mt-2">Comprar plano</a>
-            <span class="h4 mb-0 mt-2">R$9.997,00</span>
-          </div>
-        </div>
+  <!-- Formulario de contato -->
+  <section class="container py-5">
+    <div class="row text-center">
+      <div class="col">
+        <h6 class="descricao-section my-0">POSSUI ALGUMA DÚVIDA</h6>
+        <p class="anuncio-section display-4 text-primary">Fale Conosco</p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col d-flex align-items-end">
-        <div class="container-rounded-shadow w-100 bg-light p-sm-5 p-3">
-          <h2 class="titulo-novo-platinum-planos mb-0">Platinum</h2>
-          <ul class="nav flex-column">
-            <li class="item-vantagem nav-item py-3 my-1">🠂 60 dias de viagem</li>
-            <li class="item-vantagem nav-item py-3 my-1">🠂 6 destinos diferentes</li>
-            <li class="item-vantagem nav-item py-3 my-1">🠂 Tudo pago pela empresa</li>
-            <li class="item-vantagem nav-item py-3 my-1">🠂 Ingressos para eventos</li>
-          </ul>
-          <select class="form-control my-2">
-            <option>Selecione a cidade</option>
-            <option>California</option>
-            <option>Paris</option>
-            <option>Dublin</option>
-          </select>
-          <div class="d-flex flex-wrap align-items-center container-comprar-plano-gold mt-4">
-            <a href="inscricao.html" class="botao btn btn-outline-primary btn-lg mr-4 mt-2">Comprar plano</a>
-            <span class="h4 mb-0 mt-2">R$14.997,00</span>
+      <div class="col-lg col-12 my-3">
+        <div class="container-rounded-shadow bg-light p-sm-4 p-3">
+          <form>
+            <div class="form-group">
+              <label for="input-nome">Nome</label>
+              <input type="text" name="input-nome" id="input-nome" class="form-control" aria-describedby="NameHelp" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label for="input-email">Email</label>
+              <input type="email" name="input-email" id="input-email" class="form-control" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+            </div>
+            <div class="form-group">
+              <label for="text-area">Mensagem</label>
+              <textarea class="d-block w-100 form-control" name="text-area" id="text-area" cols="30" rows="4"></textarea>
+            </div>
+            <button class="botao btn btn-primary">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg col-12 my-3">
+        <h6>NOSSO ENDEREÇO</h6>
+        <img src="imagens/geral/mapa.png" alt="Imagem do mapa" class="mapa-contato w-100">
+        <h6 class="mb-1 mt-3">DADOS DE CONTATO</h6>
+        <ul class="nav flex-column">
+          <span class="link nav-link text-dark p-0" href="#">maatsimeao@gmail.com</span>
+          <span class="link nav-link text-dark p-0" href="#">+55 (61) 99999-9999</span>
+          <span class="link nav-link text-dark p-0" href="#">Seg / Sex - 08:00 ás 18:00</span>
+        </ul>
+        <h6 class="mb-1 mt-3">REDES SOCIAIS</h6>
+        <ul class="nav flex-column">
+          <a class="rede-social-pag-contato nav-link p-0 my-1 btn btn-outline-dark w-50" href="https://www.linkedin.com/in/msimeaor/" target="_blank">Linkedin</a>
+          <a class="rede-social-pag-contato nav-link p-0 my-1 btn btn-outline-dark w-50" href="https://github.com/msimeaor" target="_blank">GitHub</a>
+          <a class="rede-social-pag-contato nav-link p-0 my-1 btn btn-outline-dark w-50" href="https://www.instagram.com/msimeaor/" target="_blank">Instagram</a>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--Perguntas e respostas-->
+  <section class="container pb-5">
+    <div class="row justify-content-center py-2">
+      <div class="text-center">
+        <h6 class="descricao-section mb-0">AINDA ESTÁ COM DUVIDAS?</h6>
+        <p class="anuncio-section text-primary display-4 mb-0">Perguntas Frequentes</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-12 col-sm-12 my-3" id="perguntasFrequentes" data-children=".pergunta">
+        <div class="pergunta my-2 py-2 border-bottom">
+          <a href="#respostaOne" class="pergunta lead" data-toggle="collapse" data-parent="#perguntasFrequentes">
+            🠖 É possível cancelar a viagem?
+          </a>
+          <div id="respostaOne" class="collapse show" role="tabpanel">
+            <p class="resposta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sint sed est ipsum quaerat ea eos laborum tempora cumque enim.
+            </p>
           </div>
         </div>
+        <div class="pergunta my-2 py-2 border-bottom">
+          <a href="#respostaTwo" class="pergunta lead" data-toggle="collapse" data-parent="#perguntasFrequentes">
+            🠖 Qual garantia tenho se perder o voo?
+          </a>
+          <div id="respostaTwo" class="collapse" role="tabpanel">
+            <p class="resposta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sint sed est ipsum quaerat ea eos laborum tempora cumque enim.
+            </p>
+          </div>
+        </div>
+        <div class="pergunta my-2 py-2 border-bottom">
+          <a href="#respostaThree" class="pergunta lead" data-toggle="collapse" data-parent="#perguntasFrequentes">
+            🠖 Qual a principal forma de viagem?
+          </a>
+          <div id="respostaThree" class="collapse" role="tabpanel">
+            <p class="resposta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sint sed est ipsum quaerat ea eos laborum tempora cumque enim.
+            </p>
+          </div>
+        </div>
+        <div class="pergunta my-2 py-2 border-bottom">
+          <a href="#respostaFour" class="pergunta lead" data-toggle="collapse" data-parent="#perguntasFrequentes">
+            🠖 Qual melhor destino de viagem?
+          </a>
+          <div id="respostaFour" class="collapse" role="tabpanel">
+            <p class="resposta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sint sed est ipsum quaerat ea eos laborum tempora cumque enim.
+            </p>
+          </div>
+        </div>
+        <div class="pergunta my-2 py-2 border-bottom">
+          <a href="#respostaFive" class="pergunta lead" data-toggle="collapse" data-parent="#perguntasFrequentes">
+            🠖 Grupos grandes recebem descontos?
+          </a>
+          <div id="respostaFive" class="collapse" role="tabpanel">
+            <p class="resposta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sint sed est ipsum quaerat ea eos laborum tempora cumque enim.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center py-1">
+      <div class="text-center">
+        <p class="lead small text-uppercase mb-2">Fale conosco para mais dúvidas</p>
+        <a class="botao btn btn-primary btn-lg" href="contato.html">Entre em contato</a>
       </div>
     </div>
   </section>
@@ -188,9 +250,9 @@
     <p class="mb-0 py-2 text-light font-weight-bold">Caravan &copy; 2023. Todos os direitos reservados</p>
   </section>
 
-  <script src="./js/jquery-3.2.1.slim.min.js"></script>
-  <script src="./js/popper.min.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
 </body>
 </html>
