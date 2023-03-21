@@ -57,7 +57,7 @@ body {
   }
 
   .link-rede-social {
-    width: 75% !important;
+    width: auto !important;
   }
 
   .footer p {
@@ -72,6 +72,7 @@ body {
 @media (max-width: 576px) {
   .link-rede-social {
     font-size: 0.8rem;
+    width: 50% !important;
   }
 
   .titulo-newsletter {
